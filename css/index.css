@@ -231,26 +231,25 @@
 #galleryBG{
 	background-color: #3c3935;
 	width: 80%;
-	height: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-self:center;
-	margin: 10% auto;
+	margin: auto;
 	padding: 2%;
 }
 
-.gallerBox {
+.galleryBox {
 	height: auto;
-	width: 30%;
+	width: 100%;
 	float: left;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
 	margin: 0 19px;
 }
 
 	.imgLDN1 {
-		position: absolute;
 		z-index: 2;
 		transition: .4s;
 		transform-origin: 50% 50%;
@@ -265,13 +264,13 @@
 		width: 100%;
 	}
 
-	.gallerBox:hover .imgLDN1{
+	.galleryBox:hover .imgLDN1{
 		filter: blur(20px);
 		transform: scale(1.1);
 		opacity: 0;
 	}
 
-	.gallerBox:hover .imgLDN2{
+	.galleryBox:hover .imgLDN2{
 		filter: blur(0);
 		transform: scale(1);
 		opacity: 1;
