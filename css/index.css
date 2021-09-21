@@ -228,32 +228,40 @@
 
 
 
-#galleryBG{
+.galleryBG{
+	
 	background-color: #3c3935;
-	width: 80%;
+	width: 90%;
+	height: 150%;
 	display: flex;
+	gap: 10px;
+	gap: 10px 20px;
 	margin: auto;
 	padding: 2%;
 }
 
 .galleryBox {
-	height: auto;
+	height: 60%;
 	width: 100%;
 	float: left;
 	overflow: hidden;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-self: center;
 	margin: 0 19px;
 }
 
+.galleryBox > h4,p{
+	padding-top: 5%;
+	color: white;
+
+}
+
 	.imgLDN1 {
+		position: absolute;
 		z-index: 2;
 		transition: .4s;
 		transform-origin: 50% 50%;
 		width: 100%;
+		height: auto;
 	}
 
 	.imgLDN2{
@@ -262,12 +270,14 @@
 		opacity: 1;
 		transition: .4s;
 		width: 100%;
+		height: auto;
 	}
 
 	.galleryBox:hover .imgLDN1{
-		filter: blur(20px);
+		filter: blur(10px);
 		transform: scale(1.1);
 		opacity: 0;
+;
 	}
 
 	.galleryBox:hover .imgLDN2{
@@ -275,3 +285,195 @@
 		transform: scale(1);
 		opacity: 1;
 	}
+
+
+
+	/*-----------------------About.html-----------------------*/
+
+
+
+	#HotelIntro{
+		height: auto;
+		width: 100%;
+		margin-top: 0%;
+	}
+
+	#Front{
+		margin-top: 0%;
+		height: 80%;
+		width: 80%;
+		filter: blur(4px);
+		position: absolute;
+		top: 0%;
+		z-index: -1;
+	}
+
+	#Welcome{
+		border-radius: 15%;
+		border: 10px wheat;
+		color: white;
+		background-color: rgba(0, 0, 0, 0.7);
+		width: 30%;
+		height: 20%;
+		margin: auto;
+		position: absolute;
+		top: 30%;
+		left: 45%;
+		text-align: center;
+	}
+
+	#Welcome > button{
+		width: 55px;
+		height: 50px;
+		border-radius: 100%;
+		background-color: wheat;
+	}
+
+	#arrow{
+		width: 20px;
+		height: 30px;
+	}
+
+	/*Form*/
+
+	.form {
+		margin-top: 65%;
+		margin-bottom: 10%;
+		margin-left: 10%;
+		margin-right: 0%;
+		background-color: #35302d;
+		border-radius: 20px;
+		box-sizing: border-box;
+		height: 500px;
+		padding: 20px;
+		width: 320px;
+	  }
+	  
+	  .title {
+		color: #eee;
+		font-family: sans-serif;
+		font-size: 36px;
+		font-weight: 600;
+		margin-top: 30px;
+		text-align: center;
+	  }
+	  
+	  .subtitle {
+		color: #eee;
+		font-family: sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: -10px;
+		text-align: center;
+	  }
+	  
+	  .input-container {
+		height: 50px;
+		position: relative;
+		width: 100%;
+	  }
+	  
+	  .ic1 {
+		margin-top: 40px;
+	  }
+	  
+	  .ic2 {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column ;
+		flex-wrap: wrap;
+		
+	  }
+	  
+	  .input {
+		background-color: #454530;
+		border-radius: 12px;
+		border: 0;
+		box-sizing: border-box;
+		color: #eee;
+		font-size: 18px;
+		height: 100%;
+		outline: 0;
+		padding: 4px 20px 0;
+		width: 100%;
+	  }
+
+	  .inputCheck{
+		background-color: #454530;
+		border-radius: 12px;
+		border: 0;
+		box-sizing: border-box;
+		color: #eee;
+		font-size: 18px;
+		height: 100%;
+		outline: 0;
+		width: 40%;
+		text-align: center;
+	  }
+
+	  .inputCheck2{
+		background-color: #454530;
+		border-radius: 12px;
+		border: 0;
+		box-sizing: border-box;
+		color: #eee;
+		font-size: 18px;
+		height: 100%;
+		outline: 0;
+		width: 30%;
+		text-align: center;
+	  }
+
+h3{
+		  color: white;
+	  }
+	  
+
+	  .placeholder {
+		color: #65657b;
+		font-family: sans-serif;
+		left: 20px;
+		line-height: 14px;
+		pointer-events: none;
+		position: absolute;
+		transform-origin: 0 50%;
+		transition: color 200ms;
+		top: 20px;
+	  }
+	  
+	  
+	  .submit {
+		background-color: rgb(190, 150, 110);
+		border-radius: 12px;
+		border: 0;
+		box-sizing: border-box;
+		color: black;
+		cursor: pointer;
+		font-size: 18px;
+		height: 50px;
+		margin-top: 38px;
+		outline: 0;
+		text-align: center;
+		width: 100%;
+	  }
+
+	  .submit:hover{
+		background-color: rgb(180, 150, 100);
+	  }
+	  
+	  .submit:active {
+		background-color: white;
+		color: black;
+	  }
+	  
+	  .Reservation{
+		  width: 40%;
+		  float: right;
+		  position: absolute;
+		  top: 120%;
+		  right: 5%;
+		}
+
+		#para{
+			color: black;
+		}
